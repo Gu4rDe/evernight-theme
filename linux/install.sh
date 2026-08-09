@@ -17,6 +17,7 @@ if ! command -v starship >/dev/null 2>&1; then
 fi
 
 script_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+repo_dir=$(cd -- "$script_dir/.." && pwd)
 config_dir=${XDG_CONFIG_HOME:-$HOME/.config}
 timestamp=$(date +%Y%m%d-%H%M%S-%N)
 bashrc=${BASHRC:-$HOME/.bashrc}
@@ -34,8 +35,8 @@ mkdir -p "$config_dir/ghostty"
 backup_if_present "$config_dir/starship.toml"
 backup_if_present "$config_dir/ghostty/config"
 backup_if_present "$bashrc"
-cp -- "$script_dir/starship.toml" "$config_dir/starship.toml"
-cp -- "$script_dir/ghostty/config" "$config_dir/ghostty/config"
+cp -- "$repo_dir/starship.toml" "$config_dir/starship.toml"
+cp -- "$repo_dir/ghostty/config" "$config_dir/ghostty/config"
 
 touch "$bashrc"
 if ! grep -Fqx 'eval "$(starship init bash)"' "$bashrc"; then

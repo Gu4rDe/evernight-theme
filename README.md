@@ -19,7 +19,7 @@ Clone the repository, install Starship if needed, then run the installer:
 ```bash
 git clone <repository-url> ~/Dev/dotfiles
 cd ~/Dev/dotfiles
-bash install.sh
+bash linux/install.sh
 source ~/.bashrc
 ```
 
@@ -79,14 +79,14 @@ Install Starship with Homebrew, then run the installer:
 ```bash
 brew install starship
 cd ~/Dev/dotfiles
-bash install-macos.sh
+bash macos/install-macos.sh
 source ~/.zshrc
 ```
 
 Alternatively, let the installer install Starship through Homebrew:
 
 ```bash
-bash install-macos.sh --install-starship
+bash macos/install-macos.sh --install-starship
 ```
 
 The script does not install Ghostty or fonts. Install JetBrainsMono Nerd Font separately and select `JetBrainsMono Nerd Font Mono` in Ghostty. Existing `~/.config/starship.toml`, `~/.config/ghostty/config`, and `~/.zshrc` receive timestamped backups before replacement. Running the installer again does not duplicate the zsh initialization line.
@@ -104,21 +104,21 @@ false
 To remove the Linux installation:
 
 ```bash
-bash uninstall.sh --yes
+bash linux/uninstall.sh --yes
 ```
 
 To remove the macOS installation:
 
 ```bash
-bash uninstall-macos.sh --yes
+bash macos/uninstall-macos.sh --yes
 ```
 
 These commands remove the Starship/Ghostty configuration files and the Starship initialization line, while keeping timestamped backups. For complete removal including backups, add `--purge-backups`:
 
 ```bash
 # Linux
-bash uninstall.sh --purge-backups --yes
+bash linux/uninstall.sh --purge-backups --yes
 
 # macOS
-bash uninstall-macos.sh --purge-backups --yes
+bash macos/uninstall-macos.sh --purge-backups --yes
 ```
