@@ -2,6 +2,8 @@
 
 Minimal configuration for the Starship prompt and Ghostty on Linux and macOS.
 
+[Русская версия](README.ru.md) · [AI-readable reference](README_AI.md)
+
 ## Requirements
 
 - Linux and Bash
