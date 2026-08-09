@@ -1,0 +1,26 @@
+# Local installer backups
+*.backup-*
+*.bak
+
+# OS/editor/cache files
+.DS_Store
+.cache/
+*.cache
+*.log
+*.swp
+*.swo
+*~
+
+# Temporary files and local secrets
+*.tmp
+*.temp
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.token
+*.secret
+.bash_history
+.ssh/
+.gnupg/
