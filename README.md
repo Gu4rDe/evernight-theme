@@ -52,26 +52,6 @@ fc-cache -f
 
 In Ghostty, select `JetBrainsMono Nerd Font Mono` if it is not selected automatically. Users of another terminal can install the Starship configuration and ignore `ghostty/config`.
 
-## Check the result
-
-Start a new Bash session (`exec bash`) and inspect the prompt in these locations:
-
-```bash
-cd ~
-cd ~/Dev/projects
-cd ~/Dev/projects/Calculator
-cd ~/Dev/projects/cloud
-```
-
-The prompt should remain on one line, show the shortened paths, and show a Git branch inside a capsule in the `cloud` repository. A successful command uses the prompt's normal colored arrow; an error uses the red arrow:
-
-```bash
-true
-false
-```
-
-If you see square boxes, install and select a Nerd Font in the terminal, then restart the terminal. If capsule edges look wrong, make sure the terminal uses a font with Powerline glyphs and that both `JetBrainsMono Nerd Font Mono` and `Symbols Nerd Font` are available. Also verify that the terminal is using UTF-8. Reload Bash after changing the configuration with `source ~/.bashrc`.
-
 ## macOS installation
 
 The macOS installer configures Starship for zsh and places the Ghostty configuration in `~/.config/ghostty/config`.

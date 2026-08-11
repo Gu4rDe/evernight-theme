@@ -61,26 +61,6 @@ bash macos/install-macos.sh --install-starship
 
 Установщик не устанавливает Ghostty и шрифты. Конфигурация Ghostty записывается в `~/.config/ghostty/config`.
 
-## Проверка
-
-Откройте новую сессию shell и проверьте промпт в следующих каталогах:
-
-```bash
-cd ~
-cd ~/Dev/projects
-cd ~/Dev/projects/Calculator
-cd ~/Dev/projects/cloud
-```
-
-Проверьте оба состояния стрелки:
-
-```bash
-true
-false
-```
-
-Если видны квадраты, установите и выберите Nerd Font в терминале. Если края капсул отображаются неправильно, проверьте наличие `JetBrainsMono Nerd Font Mono`, `Symbols Nerd Font` и включённую кодировку UTF-8.
-
 ## Удаление
 
 Удалить конфигурацию Linux:
