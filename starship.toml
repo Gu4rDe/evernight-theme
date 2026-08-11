@@ -20,8 +20,9 @@ format = "[\uE0B6](fg:user)[$user]($style)[\uE0B4](fg:user)"
 [directory]
 style = "bg:dir fg:fg bold"
 format = "[\uE0B6](fg:dir)[$path]($style)[\uE0B4](fg:dir)"
-truncation_length = 3
+truncation_length = 2
 truncate_to_repo = false
+truncation_symbol = "~/"
 
 [directory.substitutions]
 "~/Dev/projects/cloud" = "projects/cloud"
