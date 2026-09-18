@@ -14,6 +14,10 @@ Minimal configuration for the Starship prompt and Ghostty on Linux and macOS.
 
 The font is needed for the capsule edges and other symbols to render correctly.
 
+The prompt adds one empty line between commands and prompts. This spacing keeps
+successive capsule rows visually separate in terminals that render short
+commands too tightly.
+
 ## Install from scratch
 
 Clone the repository, install Starship if needed, then run the installer:

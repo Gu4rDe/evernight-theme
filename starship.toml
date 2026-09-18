@@ -1,5 +1,5 @@
 palette = "capsule"
-add_newline = false
+add_newline = true
 format = "$username $directory$git_branch $time $character"
 
 [palettes.capsule]
